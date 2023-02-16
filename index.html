@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <title>Motor Sport</title>
+</head>
+
+<body style="min-height: 1000px;">
+    <div class="container w3-white w3-card-4">
+        <img src="gambarBackground.jpg" alt="Gambar Backgorund Hitam" style="width: 100%; height: 350px;">
+    </div>
+    <div class="container w3-black">
+        <center>
+            <h1 style="color: red;">Macam Macam Motor Sport</h1>
+        </center>
+    </div>
+    <div class="w3-bar w3-yellow">
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('motorsport1')">Ninja H2</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('motorsport2')">Ducati Panigale V4</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('motorsport3')">Aprilia RSV4</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('motorsport4')">GSX R-150</button>
+    </div>
+    <div class="w3-container kota" style="display: block;">
+        <center>
+            <h1>Welcome To My Web</h1>
+        </center>
+    </div>
+    <div id="profile" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+            <img src="7.jpg" alt="gambar saya" style="width: 150px; margin-top: 20px;">
+            <p>
+            <h2>Nama : Wismar Putra Perdana</h2>
+            <h2>Nim : 10122124</h2>
+            <h2>Kelas : IF 4</h2>
+            </p>
+        </center>
+    </div>
+    <div id="motorsport1" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+            <h1>Ninja H2R</h1>
+            <img src="ninja-h2.jpg" alt="Gambar Ninja h2" style="width: 250px; margin-top: 20px;">
+            <p>Ninja H2 menampilkan power dari mesin hypersport supercharged Kawasaki yang mencengangkan. Dilengkapi
+                dengan mesin supercharged 998 cc In-Line Four, elektronik yang canggih, dan rem Brembo terbaru, Ninja H2
+                memberikan performa terbaik di jalan raya.</p>
+        </center>
+    </div>
+    <div id="motorsport2" class="w3-container kota ww3-animate-top" style="display: none;">
+        <center>
+            <h1>Ducati Panigale V4</h1>
+            <img src="gambarDucati.jpeg" alt="Gambar Motor Ducati" style="width: 250px; margin-top: 20px;">
+            <p>Ducati Panigale V4 memiliki 10 gambar eksterior, diantaranya Samping kanan, Tampak belakang serong,
+                Knalpot, Lampu sein samping belakang, Jok, Lampu belakang, Rem depan, Ban depan, sistem pendinginan,
+                Marketing Image.</p>
+        </center>
+    </div>
+    <div id="motorsport3" class="w3-container kota w3-animate-fading" style="display: none;">
+        <center>
+            <h1>Aprilia RSV4</h1>
+            <img src="aprilia.jpg" alt="Gambar Motor Aprilia RSV4">
+            <p>Motor Aprilia RSV4 2023 memiliki 18 gambar dan warna foto, termasuk 15 gambar eksterior, 3 gambar warna
+                Honda City dan lain-lain. Cek mesin, instrumentasi, lampu depan, muka samping, dll., kaca spion,
+                tailstock, lampu belakang, kursi, pipa knalpot, tangki bahan bakar, pedal, roda, ban, bantalan rem,
+                pegangan motor Aprilia RSV4 2023 terbaru di sini.</p>
+        </center>
+    </div>
+    <div id="motorsport4" class="w3-container kota w3-animate-right" style="display: none;">
+        <center>
+            <h1>GSX R-150</h1>
+            <img src="gambarGsx.jpeg" alt="gambarGsx">
+            <p>Suzuki GSX R150 adalah motor sport fairing bermesin 4 tak berkapasitas mesin 150 cc silinder tunggal DOHC
+                dengan 4 klep. Diproduksi di Tambun, Kabupaten Bekasi, Jawa Barat oleh PT Suzuki Indomobil Sales sejak
+                tahun 2016.</p>
+        </center>
+    </div>
+</body>
+<script>
+    function tujuanKota(namakota) {
+        var i;
+        var x = document.getElementsByClassName('kota')
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(namakota).style.display = 'block';
+    }
+</script>
+
+</html>
